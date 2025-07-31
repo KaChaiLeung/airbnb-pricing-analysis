@@ -11,7 +11,10 @@
 
 - Printed out shape of dataframe
 - Calculated percentage of data missing in each column
-- Removed columns "license" and "neighbourhood_group" as they had no data
-- Filtered out entries with no price
-- Replaced all NaN in "reviews_per_month" column with 0
-  - They had no revies
+- Cleaned data
+  - Removed columns "license" and "neighbourhood_group" as they had no data
+  - Removed any entries with no price data
+  - Filled NaNs in "reviews_per_month" with 0 indicating no reviews
+  - Converted "last_review" column to datatime
+- Added column "has_review" (bool) to show which entries have reviews
+- Added "days_since_review" (int) to show how many days since the last review
