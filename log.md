@@ -75,7 +75,8 @@
 - Positive coefficients indicate features that raise price relative to baseline
 - Negative coefficients indicate features that lower price relative to baseline
 
-- Baseline model:
+- Ridge baseline model:
+
   - alpha=1.0, random_state=42
   - RMSE: 0.559
   - R²: 0.522
@@ -91,3 +92,20 @@
     - "latitude" = 0.2179
     - "boro_Tower Hamlets" = -0.2128
     - "boro_Kensington and Chelsea" = 0.2104
+
+- Random forest regressor baseline model:
+  - n_estimators=200, max_depth=None, min_samples_leaf=5, random_state=42, n_jobs=-1
+  - RMSE: 0.476
+  - R²: 0.653
+  - Percentage Error: 60.97%
+  - Top 10 features that influenced prediction:
+    - "room_Private room" = 0.4404
+    - "longitude" = 0.1009
+    - "latitude" = 0.09573
+    - "bedroom_count" = 0.06013
+    - "availability_365" = 0.05719
+    - "log_host_listings" = 0.04783
+    - "boro_Westminster" = 0.03655
+    - "log_reviews_per_month" = 0.03419
+    - "log_days_since_review" = 0.03057
+    - "boro_Kensington and Chelse" = 0.03057
