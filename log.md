@@ -33,6 +33,7 @@
 - **Outlier analysis** using 1.5×IQR — 6.69% of listings above upper bound, 0% below
 - **Box plots** of price by room type and by top-8 boroughs
 - **Correlation matrix** among numeric features (little linear correlation)
+- **Choropleth map** of median nightly price by London borough
 
 ---
 
